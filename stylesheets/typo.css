@@ -1,0 +1,185 @@
+body {
+    font-family: Helvetica, Tahoma;
+    color: white;
+}
+
+/* Main Navigation bar */
+div#header ul#navigation li a { text-decoration: none; }
+    div#header ul#navigation li a span.nav-tab {
+        color: #ccc;
+        font-family: Helvetica;
+        font-size: 1.3em;
+        font-variant: small-caps;
+        letter-spacing: 0.3px;
+    }
+    div#header ul#navigation li.active a span.nav-tab, div#header ul#navigation li:hover a span.nav-tab { color: #eee; }
+
+    /* Subnavigation menus */
+    div#header ul#navigation li ul.nav-subcategory li { font-size: 1.2em; }
+        div#header ul#navigation li ul.nav-subcategory li a {
+            color: #cfcfcf;
+            font-family: Helvetica;
+            font-variant: small-caps;
+            letter-spacing: 0.2px;
+        }
+        div#header ul#navigation li ul.nav-subcategory li a:hover, div#header ul#navigation li ul.nav-subcategory li.active a {
+            color: #eee;
+            font-weight: bold;
+        }
+        div#header ul#navigation li ul.nav-subcategory li a:hover { text-decoration: underline; }
+
+
+/* Content */
+div#main {}
+    div#main a { color: #ccc; text-decoration: none; border-bottom: 1px dotted #ccc; }
+    div#main a:hover { color: #fff; border-bottom: 1px solid #fff; }
+
+    div#main p, label { color: #ccc; font-size: 1.4em; line-height: 1.8em; letter-spacing: 0.01em; text-align: justify; }
+        div#main p a { font-style: italic; }
+    div#main label { display:block; padding-top: 1em; }
+
+    div#main input { width: 480px; }
+    div#main input[type="submit"] {width:auto; margin-top: 2em; display:block; }
+
+    div#main h1 {
+        color: #CCCCCC;
+        font-size: 2em;
+        font-weight: normal;
+        letter-spacing: 0.05em;
+        padding: 1em 0 0.3em 0;
+    }
+
+    div#main h2:first-letter { color: white; }
+    div#main h2 {
+        color: #ec0b12;
+        font-size: 2.8em;
+        font-weight: normal;
+        letter-spacing: 0.05em;
+    }
+    div#main h2.typeface-js { font-family: AVI-ParisAifel; }
+
+    div#main h3.section-header {
+        font-weight: bold;
+        font-size: 1.4em;
+        font-family: Tahoma;
+        letter-spacing: 1px;
+        padding: 1em 0;
+    }
+    
+    div#main div#content ul.normal, div#main div#content ol.normal { font-size: 1.4em; letter-spacing: 0.01em; }
+
+    div#main div#content .back-link { padding-top: 1em; }
+
+    /* Useful-links */
+    div#main div#content ul#useful-links { font-size: 1.4em; color: #ccc; letter-spacing: 1px; line-height: 3em; }
+        div#main div#content ul#useful-links li { line-height: 2em; letter-spacing: 0; }
+        div#main div#content ul#useful-links li#where { background: url('../images/map-icon.png') no-repeat; }
+        div#main div#content ul#useful-links li#hours { background: url('../images/clock-icon.png') no-repeat; }
+        div#main div#content ul#useful-links li#contact { background: url('../images/phone-icon.png') no-repeat; }
+        div#main div#content ul#useful-links li#sitemap { background: url('../images/www-icon.png') no-repeat; }
+        div#main div#content ul#useful-links li#photographs { background: url('../images/photo-camera-icon.png') no-repeat; }
+        div#main div#content ul#useful-links li#videos { background: url('../images/video-camera-icon.png') no-repeat; }
+
+    /* Frontpage sidebar */
+    /* Titles / separators */
+    div#main div#content div#frontpage-sidebar h3.frontpage-sidebar-title {
+        font-family: Georgia;
+        font-size: 1.6em;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 1.7em;
+        background-color: white;
+        color: #333;
+        opacity: 0.5;
+        }
+    /* Blog snippet */
+    div#main div#content div#frontpage-sidebar div#blog-snippet li.blog-section .blog-section-title {
+        font-size: 1.3em;
+        line-height: 1.5em;
+        color: white;
+        }
+        div#main div#content div#frontpage-sidebar div#blog-snippet li.blog-section .blog-section-title:after { 
+            padding-left: 0.3em;
+            content: ')';
+            color: #ec0b12;
+        }
+        div#main div#content div#frontpage-sidebar div#blog-snippet li.blog-section .blog-section-title:before { 
+            padding-right: 0.3em;
+            content: '(';
+            color: #ec0b12;
+        }
+    div#main div#content div#frontpage-sidebar div#blog-snippet li.blog-section .post-title { font-size: 1.6em; }
+    /* ------- END OF FRONTPAGE STYLING ------ */
+
+
+    /* Gallery Main Page Styling */
+    ul#gallery-categories-navigation li h3 {
+        color: white;
+        font-size: 2.2em;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+    }
+    ul#gallery-categories-navigation li a:hover h3 { text-decoration: underline; }
+    /* ------- END OF GALLERY MAIN PAGE STYLING ------- */
+
+    /* Left column typography (for two column layout) */
+    div#main div#content div#left-column p.legend {
+        color: #ccc;
+        font-size: 1.2em;
+        letter-spacing: 0.5px;
+        text-decoration: underline;
+    }
+    div#main div#content div#left-column ul#in-content-navigation-list li h3 {
+        font-size: 2.2em;
+        line-height: 1.8em;
+        font-style: normal;
+        letter-spacing: 0.08em;
+        }
+        div#main div#content div#left-column ul#in-content-navigation-list li h3 a { border: none; }
+    div#main div#content div#left-column ul#in-content-navigation-list li.active h3 {
+        background: url('../images/right-arrow-trans.png') no-repeat 175px 10px;
+        }
+        div#main div#content div#left-column ul#in-content-navigation-list li.active h3 a { color: white; }
+    /* ---- End of two column layout typography ---- */
+
+    /* People List */
+    div#main div#content ul#people-list li h3 { font-size: 2.2em; font-weight: bold; letter-spacing: 0.10em; }
+
+    /* Blog */
+    div#main div#content ul#blog-sections li.blog-section .blog-section-title { font-size: 2.2em; color: white; }
+        div#main div#content ul#blog-sections li.blog-section .blog-section-title:after { 
+            padding-left: 0.3em;
+            content: ')';
+            color: #ec0b12;
+        }
+        div#main div#content ul#blog-sections li.blog-section .blog-section-title:before { 
+            padding-right: 0.3em;
+            content: '(';
+            color: #ec0b12;
+        }
+    /* Blog sections and posts */
+    div#main div#content .blog-section .blog-section-no-content { font-style: italic; font-size: 1.3em; }    
+    div#main div#content .blog-section .post-title { font-size: 2.3em; font-family: Tahoma; letter-spacing: -1px; }
+    div#main div#content .blog-section .post-abstract { font-size: 1.4em; line-height: 1.4em; }
+    div#main div#content .blog-section .post-read-more-link a { font-size: 0.8em; font-weight: bold; font-style: normal; border: none; }
+    div#main div#content .blog-section .post-read-more-link a:hover { border-bottom: 1px solid; }
+
+    /* Video listings */
+    div#main div#content ul#videos-listing li h3 { font-size: 2.3em; font-family: Tahoma; letter-spacing: -1px; color: #ccc; }
+    div#main div#content ul#videos-listing li p { line-height: 1.6em; }
+
+    /* Wallapapers listings */
+    div#main div#content ul#wallpapers-listing li ul.wallpaper-sizes li {
+        margin: 0 0 0 2em;
+        list-style-type: lower-greek;
+    }
+    div#main div#content ul#wallpapers-listing li ul.wallpaper-sizes p { text-decoration: underline; letter-spacing: 2px; }
+    div#main div#content ul#wallpapers-listing li ul.wallpaper-sizes a {
+        letter-spacing: 2px;
+        font-size: 1.2em;
+        line-height: 1.5em;
+        }
+/*        div#main div#content ul#wallpapers-listing li ul.wallpaper-sizes a:before {
+            padding-right: 1.5em;
+            content: '-';
+        }*/

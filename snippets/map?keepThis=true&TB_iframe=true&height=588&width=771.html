@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="el_GR" lang="el_GR">
+    
+<head>
+    <title>map</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link href="../stylesheets/reset.css" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/iframes.css" rel="stylesheet" type="text/css" />
+
+    <script src="../javascripts/jquery-1.2.6.min.js" type="text/javascript"></script>
+    <script src="../javascripts/thickbox-compressed.js" type="text/javascript" ></script>
+    <script src="../javascripts/typeface.0.11.js" type="text/javascript"></script>
+    <script src="../javascripts/avi-parisaifel_parisaifel-medium.typeface.js" type="text/javascript"></script>
+
+    <!--[if lt IE 8]>
+        <link href="/stylesheets/iframes-ie7.css" rel="stylesheet" type="text/css"  media="screen" />
+    <![endif]-->
+    <!--[if lt IE 7]>
+        <link href="/stylesheets/iframes-ie6.css" rel="stylesheet" type="text/css"  media="screen" />
+    <![endif]-->
+</head>
+
+<body><script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAADstCmVicEhPxhm4x8gI72BR6E3osBu56hdfdDPYtGEDDJYI0iBS94Qqaq95IvLFwCvUQ_KgttaxhKA&amp;hl=el&amp;sensor=false"
+      type="text/javascript"></script>
+
+<script type="text/javascript">
+    //<![CDATA[
+  
+      function createMarker(point,html) {
+        var marker = new GMarker(point);
+        GEvent.addListener(marker, "click", function() {
+          marker.openInfoWindowHtml(html);
+        });
+        return marker;
+      }
+
+function load(){
+      map = new GMap2(document.getElementById("map"));
+      map.addControl(new GLargeMapControl());
+      map.addControl(new GMapTypeControl());
+      map.setCenter(new GLatLng(37.948365,23.713000),16);
+
+      var point = new GLatLng(37.945433,23.715727);
+      var html = '<div style="width:240px"></div>'
+      var marker = createMarker(point,html)
+      map.addOverlay(marker);
+
+      map.setCenter(new GLatLng(37.948365,23.713000),16);
+}
+
+    //]]>
+</script>
+
+<div id="left-bar">
+    <h2>Theodoros Karletsis Artistic Team</h2>
+    <p>
+        Προσκόπων Αϊδινίου 5,<br />
+        Νέα Σμύρνη
+    </p>
+
+    <ul id="useful-links">
+        <h3>Χρήσιμοι σύνδεσμοι:</h3>
+        <li>
+            <a href='http://maps.google.com/maps?daddr=5+%CE%A0%CF%81%CE%BF%CF%83%CE%BA%CE%BF%CF%80%CF%89%CE%BD+%CE%91%CE%B9%CE%B4%CE%B9%CE%BD%CE%B9%CE%BF%CF%85,+%CE%9D%CE%B5%CE%B1+%CE%A3%CE%BC%CF%85%CF%81%CE%BD%CE%B7+17123,+Greece&geocode=&dirflg=&saddr=&f=d&sll=37.945907,23.715727&sspn=0.009391,0.019162&ie=UTF8&ll=37.945433,23.715727&spn=0.009391,0.019162&z=16&hl=el' rel="external">Πώς θα έρθετε οδικώς (Google Maps)</a>
+        </li>
+        <li>
+            <a href='http://www.youdrive.gr/index.html?mode=route&id=50d241ba-f56d-45ee-ab6e-60fdab48da98' rel="external">Πώς θα έρθετε με συγκοινωνία (YouDrive.gr)</a>
+        </li>
+    </ul>
+</div>
+
+<div id="map-container"><div id="map" style="width:600px; height:600px;"></div></div>
+
+<script type="text/javascript">
+    load();
+    $('body').unload(GUnload);
+</script></body>
+</html>

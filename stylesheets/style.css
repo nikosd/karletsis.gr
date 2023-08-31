@@ -1,0 +1,327 @@
+.clear { clear: both; }
+.no-height { height: 1px; }
+
+body {
+    font-size: 62.5%;
+    min-width: 99.9em;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #0F1717 url(../images/bg.jpg) no-repeat fixed 0 0;
+}
+
+/*Logo*/
+div#logo {
+    position: fixed;
+    top: 580px;
+    left: 685px;
+    }
+    div#logo h1 { display: none; }
+    div#logo a { text-decoration: none; }
+
+/* Navigation */
+/* Main navigation bar */
+div#header { width: 100%; }
+    div#header ul#navigation {
+        position: relative;
+        width: 100%;
+        height: 35px;
+        margin: 0;
+        padding: 0;
+    }
+    div#header ul#navigation, div#header ul#navigation li {
+        position: relative;
+        list-style: none;
+        list-decoration: none;
+        display: block;
+        }
+        div#header ul#navigation li.first { margin: 0; }
+        div#header ul#navigation li.active { background: url('../images/bg-red.png'); }
+        div#header ul#navigation li:hover { background: url('../images/bg-red.png'); }
+        div#header ul#navigation li.right-filler {
+            position: absolute;
+            left: 999px;
+            margin: 0;
+            width: 190px;
+        }
+        div#header ul#navigation li.right-filler:hover { background: url('../images/bg-black.png'); }
+        div#header ul#navigation li {
+            float: left;
+            width: 141px;
+            height: 35px;
+            padding: 0;
+            margin: 0 0 0 2px;
+            background: url('../images/bg-black.png');
+            }
+            div#header ul#navigation li span.nav-tab { display: block; line-height: 35px; text-align: center; }
+                /* Icons for navigation tabs */
+                div#header ul#navigation li span.nav-tab span.icon { 
+                    display: block;
+                    position: relative;
+                    float: left;
+                    height: 35px;
+                    width: 25px;
+                    margin: 0 -25px 0 15px;
+                }
+                div#header ul#navigation li span#home-tab span.icon { 
+                    margin-left: 30px;
+                    background: url('../images/home-tab-icon-trans.png') no-repeat;
+                }
+                div#header ul#navigation li span#h-omada-tab span.icon {
+                    background: url('../images/team-tab-icon-trans.png') no-repeat;
+                }
+                div#header ul#navigation li span#o-xwros-tab span.icon {
+                    background: url('../images/place-tab-icon-trans.png') no-repeat;
+                }
+                div#header ul#navigation li span#yphresies-tab span.icon {
+                    background: url('../images/services-tab-icon-trans.png') no-repeat;
+                }
+                div#header ul#navigation li span#blog-tab span.icon {
+                    background: url('../images/blog-tab-icon-trans.png') no-repeat;
+                }
+                div#header ul#navigation li span#gallery-tab span.icon {
+                    background: url('../images/gallery-tab-icon-trans.png') no-repeat;
+                }
+                div#header ul#navigation li span#epikoinwnia-tab span.icon {
+                    background: url('../images/contact-tab-icon-trans.png') no-repeat;
+                }
+            /* Subnavigation menu */
+            div#header ul#navigation li ul.nav-subcategory { padding: 0; display: none; }
+            div#header ul#navigation li.active ul.nav-subcategory { display: block; }
+                div#header ul#navigation li ul.nav-subcategory li {
+                    display: block;
+                    float: none;
+                    height: 1.7em;
+                    line-height: 1.6em;
+                    width: 141px;
+                    margin: 0;
+                    padding: 0 0;
+                    text-align: center;
+                }
+                div#header ul#navigation li ul.nav-subcategory li:hover { background: url('../images/bg-black.png'); }
+                div#header ul#navigation li ul.nav-subcategory li.active { background: url('../images/bg-black.png'); }
+/* ------ END OF NAVIGATION ------ */
+
+/* Main */
+div#main {
+    position: relative;
+    clear: both;
+    width: 592px;
+    margin: 66px 0 0 13px;
+    padding: 0 0 0 13px;
+    height: 100%;
+    }
+
+    /* Heading and Headings Navigation */
+    div#main h2 {
+        height: 53px;
+        padding: 0 0 13px 13px;
+        margin: 0;
+        background: url('../images/head-bg.png');
+        font-stretch: expanded;
+        }
+
+    /* Main area */
+    div#main div#content {
+        position: relative;
+        width: 566px;
+        min-height: 505px;
+        height: 100%;
+        padding: 0 13px 10px 13px;
+        margin: 0 0 0 0;
+        background: url('../images/content-bg.png');
+        }
+
+        div#main div#content p { padding-top: 0.5em; margin-top: 0; }
+
+        div#main div#content div.left { float: left; margin: 15px 13px 0px 0; }
+        div#main div#content div.right { float: right; margin: 15px 0 0px 13px; }
+
+        div#main div#content ul.normal, div#main div#content ol.normal { margin: 1em 0;}
+            div#main div#content ul.normal li, div#main div#content ol.normal li {
+                line-height: 1.4em;
+                margin: 0.4em 0 0.4em 1em;
+            }
+            div#main div#content ul.normal li { list-style: square inside; }
+            div#main div#content ol.normal li { list-style: decimal inside; }
+            
+        /* Frontpage styles */
+        /* 'Useful links' */
+        div#main div#content ul#useful-links { margin: 1em 0 0 0; }
+            div#main div#content ul#useful-links li { float: left; padding-left: 2em; width: 140px; }
+        /* Frontpage sidebar */
+        div#main div#content div#frontpage-sidebar { float: right; width: 37%; padding: 1em 0pt 0pt 2em; }
+            div#main div#content div#frontpage-sidebar div { clear: left; margin-bottom: 1em; }
+            div#main div#content div#frontpage-sidebar h3.frontpage-sidebar-title {
+                margin: 0 0 1em 0;
+                clear: left;
+                text-align: center;
+            }
+            /* Blog snippet */
+            div#main div#content div#frontpage-sidebar div#blog-snippet li.blog-section { margin-bottom: 1em; }
+                div#main div#content div#frontpage-sidebar div#blog-snippet li.blog-section .blog-section-title {
+                    float: left;
+                    padding-right: 0.5em;
+                    }
+            /* Gallery snippet */
+            div#main div#content div#frontpage-sidebar div#photo-gallery-snippet { text-align: center; }
+            div#main div#content div#frontpage-sidebar div#photo-gallery-snippet ul li a img {
+                width: 58px;
+                height: 58px;
+                float: left;
+                margin: 0 16px 2em 0;
+            }
+            div#main div#content div#frontpage-sidebar div#photo-gallery-snippet ul li a img.last { margin-right: 0; }
+
+        /* In content navigation */
+        div#main div#content div#left-column { 
+            width: 20.5em;
+            float: left;
+            }
+            div#main div#content div#left-column p.legend { text-align: right; padding-right: 4em; }
+            div#main div#content div#left-column h3 { text-align: right; padding-right: 2.2em; }
+            div#main div#content div#left-column ul { padding-top: 1em; }
+        div#main div#content div#right-column { width: 35.6em; margin-left: 21em; }
+
+        /* Team listing */
+        div#main div#content ul#people-list { padding: 1em 0 0 0; }
+            div#main div#content ul#people-list li {
+                float: left;
+                height: 13em;
+                margin-right: 3%;
+                width: 47%;
+                }
+                div#main div#content ul#people-list li .taped-photo span { 
+                    background: transparent url(../images/tape-small.png) no-repeat scroll 0 0;
+                    height: 16px;
+                    left: 22px;
+                    top: -8px;
+                    width: 41px;
+                }
+                div#main div#content ul#people-list li img { margin-right: 1em; max-width: 75px; }
+                div#main div#content ul#people-list li h3 { padding-top: 0.7em; }
+
+        /* Services listing */
+        div#main div#content div#services-list { padding-left: 1em; }
+            div#main div#content div#services-list div.section {
+                float: left;
+                margin-top: 1em;
+                width: 50%;
+            }
+            div#main div#content div#services-list .taped-photo span { 
+                background: transparent url(../images/tape-small.png) no-repeat scroll 0 0;
+                height: 21px;
+                left: 32px;
+                top: -7px;
+                width: 41px;
+            }
+
+        /* Blog */
+        div#main div#content ul#blog-sections, div#main div#content div.blog-section { padding-top: 1em; }
+        div#main div#content ul#blog-sections li.blog-section { margin-bottom: 2.5em; padding-bottom: 1em; }
+            div#main div#content ul#blog-sections li.blog-section .blog-section-title {
+                padding: 0 0.2em;
+                float: right;
+                clear: both;
+            }
+            div#main div#content ul#blog-sections li.blog-section .blog-section-no-content {
+                margin: 0;
+                padding: 0;
+                text-align: right;
+            }
+            div#main div#content ul#blog-sections li.blog-section .post-title { margin-bottom: 0.1em; }
+            div#main div#content ul#blog-sections li.blog-section .post-read-more-link {}
+
+        /* Video listings */
+        div#main div#content ul#videos-listing li h3 { padding: 0.5em 0; width: 550px; }
+        div#main div#content ul#videos-listing li p { margin: 0.2em 0 1.3em 0; width: 550px; }
+
+        /* Wallpaper listings */
+        div#main div#content ul#wallpapers-listing { padding: 1em 0; }
+            div#main div#content ul#wallpapers-listing li img { margin-bottom: 3em; }
+            div#main div#content ul#wallpapers-listing li:last-child img { margin-bottom: 0; }
+            div#main div#content ul#wallpapers-listing li ul.wallpaper-sizes { float: right; width: 150px; }
+                div#main div#content ul#wallpapers-listing li ul.wallpaper-sizes p { padding: 1em 0 3em 0; }
+                div#main div#content ul#wallpapers-listing li ul.wallpaper-sizes li { padding: 0 0 2em 0; }
+
+        /* Photos styling (General) */
+        div#main div#content .taped-photo { position: relative; }
+            div#main div#content .taped-photo a { text-decoration: none; border: none; }
+            div#main div#content .taped-photo span {
+                display: block;
+                position: absolute;
+                top: -14px;
+                left: 50px;
+                height: 27px;
+                width: 77px;
+                background: transparent url('../images/tape.png') no-repeat scroll 0 0;
+            }
+            div#main div#content .taped-photo img { max-width: 180px; background: #FFFFFF none repeat scroll 0 0; }
+
+        /* Gallery main page styling */
+        ul#gallery-categories-navigation li {
+            width: 31%;
+            float: left;
+            margin: 10px 3%;
+            padding: 0.5em 0 0 0;
+            text-align: center;
+        }
+        ul#gallery-categories-navigation li:first-child { margin: 10px 0; }
+        ul#gallery-categories-navigation li:last-child { margin: 10px 0; }        
+            ul#gallery-categories-navigation li h3 { padding: 1.2em 0 0.2em 0; }
+            ul#gallery-categories-navigation li p { text-align: center; }
+
+        /* Photo gallery styling */
+        div#main div#content ul#photo-gallery-thumbs { padding-top: 1em; text-align: center;}
+            div#main div#content ul#photo-gallery-thumbs li {
+                position: relative;
+                width: 140px;
+                height: 125px;
+                float: left;
+                }
+                div#main div#content ul#photo-gallery-thumbs li a { text-decoration: none; border: none; }
+                div#main div#content ul#photo-gallery-thumbs li span {
+                    display: block;
+                    position: absolute;
+                    top: -8px;
+                    left: 52px;
+                    height: 17px;
+                    width: 45px;
+                    background: transparent url('../images/tape-small.png') no-repeat scroll 0 0;
+                }
+                div#main div#content ul#photo-gallery-thumbs li img {
+                    border: none;
+/*                    width: 90px;*/
+/*                    height: 90px;*/
+                }
+/* ------ END OF MAIN CONTENT ------ */
+
+
+
+/* ------ Thickboxes ------ */
+ul#sitemap { list-style: square; color: red; }
+ul#sitemap ul.subtree { list-style: circle; color: #CCCCCC; margin-top: 0.5em; }
+ul#sitemap li:first-child { margin-top: 2em; }
+ul#sitemap li { font-size: 1.4em; margin-top: 1.8em; margin-left: 8em; }
+ul#sitemap li li:first-child { margin-top: 0.5em;}
+ul#sitemap li li { font-size: 0.8em; margin-top: 0.5em; margin-left: 1em; }
+
+div#contact-details { text-align:center; font-size: 1.2em; }
+div#contact-details h1 { padding-bottom: 0.5em; }
+
+/* Copyrights and info */
+span#footer-image {
+    height: 249px;
+    width: 50px;
+    position: fixed;
+    display: block;
+    top: 154px;
+    right: 0px;
+    background: url('../images/copyright-trans.png');
+}
+
+div#footer-text {
+    width: 300px;
+    height: 40px;
+    clear: both;
+}
